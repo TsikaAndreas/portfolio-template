@@ -26,6 +26,9 @@ nav .navbar-nav .nav-link {
 
 nav .navbar-nav .nav-link:hover {
   color: rgb(var(--blue));
+  scale: 1.2;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 nav .navbar-brand.logo-text p,
@@ -34,26 +37,46 @@ nav .navbar-brand.logo-text p,
   letter-spacing: 1px;
 }
 
+nav .navbar-brand.logo-text:hover {
+  scale: 1.1;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
 nav .navbar-brand.logo-text p::first-letter,
 .offcanvas .offcanvas-title p::first-letter {
   color: rgb(var(--blue));
   font-size: 1.5rem;
 }
 
+/* Scroll up button */
+
+#btn-scroll-up {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: none;
+}
+
+#btn-scroll-up:hover {
+  scale: 1.2;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
 
 /* Social Links */
 
-.social-nav {
+.hero-section .social-nav {
   max-width: 200px;
 }
 
-.social-nav .nav .nav-item {
+.hero-section .social-nav .nav .nav-item {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 5px 10px -5px rgba(var(--light-gray), 0.5),0 4px 6px -4px rgba(var(--light-gray), 0.5);
 }
 
-.social-nav .nav .nav-item:hover {
+.hero-section .social-nav .nav .nav-item:hover {
   scale: 1.3;
   transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
@@ -202,4 +225,12 @@ nav .navbar-brand.logo-text p::first-letter,
 .experience-section .row .experience-item {
   display: flex;
   align-items: stretch;
+}
+
+/* Footer */
+
+footer .social-items li:hover {
+  scale: 1.3;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }

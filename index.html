@@ -7,6 +7,7 @@
   <title>Andrei-Robert Tica</title>
   <link rel="stylesheet" href="css/main.css">
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js" defer></script>
 </head>
 <body>
   <header>
@@ -67,7 +68,7 @@
                     <i class="fa-brands fa-github"></i>
                     <span class="menu-title sr-only">GitHub</span>
                   </a></li>
-                  <li class="nav-item"><a class="nav-link" href="mailto:andreastsika@gmail.com">
+                  <li class="nav-item"><a class="nav-link" title="Mail" href="mailto:andreastsika@gmail.com">
                     <i class="fa-regular fa-envelope"></i>
                     <span class="menu-title sr-only">Email</span>
                   </a></li>
@@ -218,30 +219,41 @@
     </section>
   </main>
 
-  <footer>
+  <section>
+    <button type="button" class="btn btn-primary btn-floating btn-md rounded-circle" id="btn-scroll-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </section>
+
+  <footer class="d-flex text-center align-items-center py-3 my-4 px-5 border-top">
     <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 text-muted">
-            <i class="fa-regular fa-copyright mx-1"></i>2022 Andrei-Robert Tica</span>
+      <div class="my-3">
+        <div class="h4">Andrei Robert Tica</div>
+        <p>Full Stack Web Developer</p>
+        <div class="social-nav">
+          <nav role="navigation">
+            <ul class="nav social-items col-md-4 justify-content-center w-100">
+              <li class="nav-item"><a class="nav-link" title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/tsika">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span class="menu-title sr-only">LinkedIn</span>
+              </a></li>
+              <li class="nav-item"><a class="nav-link" title="GitHub" target="_blank" href="https://github.com/TsikaAndreas">
+                <i class="fa-brands fa-github"></i>
+                <span class="menu-title sr-only">GitHub</span>
+              </a></li>
+              <li class="nav-item"><a class="nav-link" title="Mail" href="mailto:andreastsika@gmail.com">
+                <i class="fa-regular fa-envelope"></i>
+                <span class="menu-title sr-only">Email</span>
+              </a></li>
+            </ul>
+          </nav>
         </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="nav-item"><a class="nav-link" title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/tsika">
-            <i class="fa-brands fa-linkedin-in"></i>
-            <span class="menu-title sr-only">LinkedIn</span>
-          </a></li>
-          <li class="nav-item"><a class="nav-link" title="GitHub" target="_blank" href="https://github.com/TsikaAndreas">
-            <i class="fa-brands fa-github"></i>
-            <span class="menu-title sr-only">GitHub</span>
-          </a></li>
-          <li class="nav-item"><a class="nav-link" href="mailto:andreastsika@gmail.com">
-            <i class="fa-regular fa-envelope"></i>
-            <span class="menu-title sr-only">Email</span>
-          </a></li>
-        </ul>
-      </footer>
+      </div>
+
+      <div class="text-small text-secondary">
+        <i class="fa-regular fa-copyright mx-1"></i>2022 Andrei-Robert Tica</span>
+      </div>
     </div>
   </footer>
-
 </body>
 </html>
