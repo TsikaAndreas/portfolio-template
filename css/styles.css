@@ -2,6 +2,7 @@
   --gray: 55, 65, 80;
   --light-gray: 100, 100, 120;
   --blue: 60, 130, 255;
+  --light-blue: 210,235,255;
   --line-height: 1.5rem;
   --dark-white: 244, 246, 248;
 }
@@ -225,6 +226,59 @@ nav .navbar-brand.logo-text p::first-letter,
 .experience-section .row .experience-item {
   display: flex;
   align-items: stretch;
+}
+
+.experience-section .experience-item .card-body {
+  color: rgb(var(--gray));
+}
+
+/* Contact */
+
+.contact-cards {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contact-cards .card {
+  align-items: center;
+  background-color: rgb(var(--light-blue));
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 1rem 0;
+  min-width: 290px;
+  padding: 1rem;
+  transition: all .3s ease-in-out;
+}
+
+.contact-cards .card .card-text {
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.contact-cards .card .card-text a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-cards .card .card-icon {
+  color: rgb(var(--gray));
+}
+
+.contact-section .contact-form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(var(--dark-white));
+  border-radius: 10px;
+}
+
+.contact-section .contact-form form {
+  width: 100%;
 }
 
 /* Footer */
