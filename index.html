@@ -10,80 +10,93 @@
   <script src="js/scripts.js" defer></script>
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white border border-bottom border-light" role="navigation">
-      <div class="container-fluid mx-5 mt-2 mb-1 align-items-center">
-        <a class="navbar-brand logo-text" href="#">
-          <p>Andrei</p>
-          <p>Robert</p>
-          <p>Tica</p>
-        </a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
-          <i class="fa-solid fa-bars-staggered"></i>
+  <nav>
+    <div class="navbar navbar-expand-lg fixed-top bg-blur">
+      <div class="container-fluid ">
+        <div class="navbar-brand mx-3">
+          <a class="logo-text" href="#">
+            <p>Andrei</p>
+            <p>Robert</p>
+            <p>Tica</p>
+          </a>
+        </div>
+        <ul class="navbar-nav mx-3 d-none d-lg-flex">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title logo-text" id="offcanvasLabel">
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-end d-flex d-lg-none" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">
+          <div class="navbar-brand">
+            <a class="logo-text" href="#">
               <p>Andrei</p>
               <p>Robert</p>
               <p>Tica</p>
-            </h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </a>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav ms-auto me-2">
-              <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-              <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-              <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+        </h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto me-2 align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="hero" class="hero-section">
+    <div class="container col-xxl-9 px-4 py-5 mt-5">
+      <div class="row flex-lg-row-reverse align-items-center py-5">
+        <div class="col-lg-6">
+          <img src="images/developer.png" class="d-block mx-lg-auto img-fluid" alt="Developer Coding"  loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-4">Hi, I'm 
+            <span class="text-blue marker">Andrei</span>
+          </h1>
+          <p class="lead">Full Stack Web Developer</p>
+          <p>I’m focused on building responsive fullstack web applications while learning & exploring other technologies.</p>
+          <div class="social-nav pb-4">
+            <nav role="navigation">
+              <ul class="nav m-auto justify-content-between">
+                <li class="nav-item"><a class="nav-link" title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/tsika">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <span class="menu-title sr-only">LinkedIn</span>
+                </a></li>
+                <li class="nav-item"><a class="nav-link" title="GitHub" target="_blank" href="https://github.com/TsikaAndreas">
+                  <i class="fa-brands fa-github"></i>
+                  <span class="menu-title sr-only">GitHub</span>
+                </a></li>
+                <li class="nav-item"><a class="nav-link" title="Mail" href="mailto:andreastsika@gmail.com">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span class="menu-title sr-only">Email</span>
+                </a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="d-grid gap-2 d-sm-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get in touch</button>
+            <button type="button" class="btn btn-outline-dark btn-lg px-4">Resume</button>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
   </header>
 
   <main>
-    <section id="hero" class="hero-section">
-      <div class="container col-xxl-9 px-4 py-5 mt-5">
-        <div class="row flex-lg-row-reverse align-items-center py-5">
-          <div class="col-lg-6">
-            <img src="images/developer.png" class="d-block mx-lg-auto img-fluid" alt="Developer Coding"  loading="lazy">
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-4">Hi, I'm 
-              <span class="text-blue marker">Andrei</span>
-            </h1>
-            <p class="lead">Full Stack Web Developer</p>
-            <p>I’m focused on building responsive fullstack web applications while learning & exploring other technologies.</p>
-            <div class="social-nav pb-4">
-              <nav role="navigation">
-                <ul class="nav m-auto justify-content-between">
-                  <li class="nav-item"><a class="nav-link" title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/tsika">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <span class="menu-title sr-only">LinkedIn</span>
-                  </a></li>
-                  <li class="nav-item"><a class="nav-link" title="GitHub" target="_blank" href="https://github.com/TsikaAndreas">
-                    <i class="fa-brands fa-github"></i>
-                    <span class="menu-title sr-only">GitHub</span>
-                  </a></li>
-                  <li class="nav-item"><a class="nav-link" title="Mail" href="mailto:andreastsika@gmail.com">
-                    <i class="fa-regular fa-envelope"></i>
-                    <span class="menu-title sr-only">Email</span>
-                  </a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="d-grid gap-2 d-sm-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get in touch</button>
-              <button type="button" class="btn btn-outline-dark btn-lg px-4">Resume</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="skills" class="skills-section">
       <div class="container col-xxl-9 px-4 py-5">
         <div class="text-center">
@@ -91,7 +104,7 @@
         </div>
         <div class="row py-5">
           <div class="col-lg-6">
-            <ul class="skill-list d-flex flex-wrap justify-content-center px-4">
+            <ul class="skill-list d-flex flex-wrap justify-content-center px-2">
               <li class="skill-item">
                 <div class="skill-img">
                   <img src="images/php.png" alt="PHP">
