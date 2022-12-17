@@ -242,20 +242,32 @@
             </div>
           </div>
           <div class="contact-form col-lg-8 py-3 px-5 my-3">
-            <form action="#" id="contact-form" method="POST">
-              <div class="form-group my-2">
+            <form id="contact-form" action="#">
+              <div class="form-group my-4">
                 <label for="name" class="form-label">Name</label>
-                <input class="form-control" type="text" id="name" name="name" required>
+                <div class="input-group mb-3">
+                  <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                  <input class="form-control py-2" type="text" id="name" name="name" required autocomplete="off" placeholder="Type your name...">
+                </div>
               </div>
-              <div class="form-group my-2">
+              <div class="form-group my-4">
                 <label for="email" class="form-label">Email</label>
-                <input class="form-control" type="email" id="email" name="_replyto" required>
+                <div class="input-group mb-3">
+                  <span class="input-group-text"><i class="fa-solid fa-at"></i></span>
+                  <input class="form-control" type="email" id="email" name="email" required autocomplete="off" placeholder="example@mail.com">
               </div>
-              <div class="form-group my-2">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
               </div>
-              <button class="btn btn-primary my-3 px-3 py-2" type="submit">Send Message</button>
+              <div class="form-group my-4">
+                <label for="message" class="form-label">
+                  <span>Message</span>
+                </label>
+                <textarea class="form-control" id="message" name="message" rows="4" required placeholder="Type your message..."></textarea>
+              </div>
+              <button class="btn btn-primary my-3 px-3 py-2" type="submit">
+                <i class="fa-regular fa-paper-plane"></i>
+                <span class="ml-3">Send Message</span>
+              </button>
+              <div class="form-status"></div>
             </form>
           </div>
         </div>
