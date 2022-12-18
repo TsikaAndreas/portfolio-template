@@ -7,6 +7,7 @@
   --dark-white: 244, 246, 248;
 }
 
+/* General */
 .text-gray {
   color: rgb(var(--gray));
 }
