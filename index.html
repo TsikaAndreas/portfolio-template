@@ -24,7 +24,6 @@
           <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-label="Toggle navigation">
@@ -50,7 +49,6 @@
           <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link" href="#hero">Home</a></li>
           <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -61,7 +59,7 @@
     <div class="container col-xxl-9 px-4 py-5 mt-5">
       <div class="row flex-lg-row-reverse align-items-center py-5">
         <div class="col-lg-6">
-          <img src="images/developer.png" class="d-block mx-lg-auto img-fluid" alt="Developer Coding"  loading="lazy">
+          <img src="assets/images/developer.png" class="d-block mx-lg-auto img-fluid" alt="Developer Coding"  loading="lazy">
         </div>
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold lh-1 mb-4">Hi, I'm 
@@ -89,10 +87,16 @@
           </div>
           <div class="d-grid gap-2 d-sm-flex justify-content-md-start">
             <a href="#contact" type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get in touch</a>
-            <button type="button" class="btn btn-outline-dark btn-lg px-4">
-              <i class="fa-solid fa-cloud-arrow-down"></i>
-              <span>Resume</span>
-            </button>
+            <div class="dropdown">
+              <button class="btn btn-outline-dark btn-lg px-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-cloud-arrow-down"></i>
+                <span>Resume</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/assets/files/cv_en.pdf" download="Andrei-Robert Tica CV">English Version</a></li>
+                <li><a class="dropdown-item" href="/assets/files/cv_gr.pdf" download="Andrei-Robert Tica CV">Greek Version</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -110,49 +114,49 @@
             <ul class="skill-list d-flex flex-wrap justify-content-center px-2">
               <li class="skill-item" title="PHP">
                 <div class="skill-img">
-                  <img src="images/php.png" alt="PHP">
+                  <img src="assets/images/php.png" alt="PHP">
                 </div>
                 <p class="skill-text">PHP</p>
               </li>
               <li class="skill-item" title="JavaScript">
                 <div class="skill-img">
-                  <img src="images/javascript.png" alt="JavaScript">
+                  <img src="assets/images/javascript.png" alt="JavaScript">
                 </div>
                 <p class="skill-text">JavaScript</p>
               </li>
               <li class="skill-item" title="Laravel">
                 <div class="skill-img">
-                  <img src="images/laravel.png" alt="Laravel">
+                  <img src="assets/images/laravel.png" alt="Laravel">
                 </div>
                 <p class="skill-text">Laravel</p>
               </li>
               <li class="skill-item" title="CSS">
                 <div class="skill-img">
-                  <img src="images/css.png" alt="CSS">
+                  <img src="assets/images/css.png" alt="CSS">
                 </div>
                 <p class="skill-text">CSS</p>
               </li>
               <li class="skill-item" title="SQL">
                 <div class="skill-img">
-                  <img src="images/sql.png" alt="SQL">
+                  <img src="assets/images/sql.png" alt="SQL">
                 </div>
                 <p class="skill-text">SQL</p>
               </li>
               <li class="skill-item" title="jQuery">
                 <div class="skill-img">
-                  <img src="images/jquery.png" alt="jQuery">
+                  <img src="assets/images/jquery.png" alt="jQuery">
                 </div>
                 <p class="skill-text">jQuery</p>
               </li>
               <li class="skill-item" title="Moodle">
                 <div class="skill-img">
-                  <img src="images/moodle.png" alt="Moodle">
+                  <img src="assets/images/moodle.png" alt="Moodle">
                 </div>
                 <p class="skill-text">Moodle</p>
               </li>
               <li class="skill-item" title="ReactJS">
                 <div class="skill-img">
-                  <img src="images/reactjs.png" alt="ReactJS">
+                  <img src="assets/images/reactjs.png" alt="ReactJS">
                 </div>
                 <p class="skill-text">ReactJS</p>
               </li>
@@ -192,18 +196,24 @@
               <div class="card-header px-4 py-3">
                 <div class="header-items d-flex justify-content-between">
                   <div>
-                    <h3 class="h5 mb-1">Full Stack Development</h3>
+                    <h3 class="h5 mb-1">Full Stack Web Development</h3>
                     <div class="text-muted text-small">WIDE Services <small>(2020-present)</small></div>
                     <p>Full-time</p>
                   </div>
                   <div class="card-img">
-                    <img src="images/web_development.png" alt="Full Stack Developement">
+                    <img src="assets/images/web_development.png" alt="Full Stack Developement">
                   </div>
                 </div>
               </div>
               <div class="card-body px-4 py-3">
-                <p>When I started working as a full-stack developer, my work was mainly focused on solving technical issues in web applications and creating new features for them. Over time I started to learn how to work with Moodle e-learning platforms, as well as create new plugins or fix any issues related to them.</p>
-                <p>With the technological knowledge, I gained from my past experiences, the scope of my responsibilities expanded to maintaining and improving the security of our clients' LMS platforms.</p>
+                <ul class="experience-list">
+                  <li>Developed and maintained high-quality Laravel web applications to meet client requirements.</li>
+                  <li>Created custom plugins for Moodle e-learning platforms that improved functionality and user experience.</li>
+                  <li>Implemented official code security patches on hundreds of Moodle platforms, ensuring the security and stability of clients' e-learning platforms.</li>
+                  <li>Responded to client inquiries and resolved technical issues in a timely manner.</li>
+                  <li>Developed new features and functionality to enhance user experience.</li>
+                  <li>Conducted thorough technical quality assurance on every plugin prior to client delivery to ensure high-quality and error-free deliverables.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -218,14 +228,19 @@
                     <p>Intership</p>
                   </div>
                   <div class="card-img">
-                    <img src="images/website.png" alt="Web Developer">
+                    <img src="assets/images/website.png" alt="Web Developer">
                   </div>
                 </div>
               </div>
               <div class="card-body px-4 py-3">
-                <p>During my internship I learned new skills on a day-to-day basis that I could apply to my tasks in order to improve the efficiency of the code and user productivity.</p>
-                <p>Part of my daily tasks included providing technical support to users and creating detailed documentation and presentations of the system for user training.</p>
-                <p>After learning the laravel framework, and with my existing knowledge I started to engage in solving technical issues in web applications, as well as creating new features for them. </p>
+                <ul class="experience-list">
+                  <li>Acquired new skills and knowledge on a daily basis to improve code efficiency and user productivity</li>
+                  <li>Provided technical support to users.</li>
+                  <li>Created detailed documentation and presentations for user training.</li>
+                  <li>Developed new features for web applications using the Laravel framework.</li>
+                  <li>Participated in hands-on learning and development during internship.</li>
+                  <li>Engaged in solving technical issues in web applications.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -324,7 +339,7 @@
       </div>
 
       <div class="text-small text-secondary">
-        <i class="fa-regular fa-copyright mx-1"></i>2022 Andrei-Robert Tsika</span>
+        <i class="fa-regular fa-copyright mx-1"></i>2023 Andrei-Robert Tsika</span>
       </div>
     </div>
   </footer>

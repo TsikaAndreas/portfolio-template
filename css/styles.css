@@ -114,7 +114,7 @@ nav .navbar-brand .logo-text p::first-letter,
   position: absolute;
   bottom: -25px;
   right: -30px;
-  background-image: url(../images/marker.svg);
+  background-image: url(../assets/images/marker.svg);
   background-repeat: no-repeat;
 }
 
@@ -246,6 +246,14 @@ nav .navbar-brand .logo-text p::first-letter,
 
 .experience-section .experience-item .card-body {
   color: rgb(var(--gray));
+}
+
+.experience-section .experience-list {
+  list-style-type: disc;
+}
+
+.experience-section .experience-list li:not(:last-of-type){
+  margin-bottom: 0.5rem;
 }
 
 /* Contact */
