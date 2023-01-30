@@ -68,6 +68,11 @@ nav .navbar-brand .logo-text p::first-letter,
   font-size: 1.5rem;
 }
 
+nav .offcanvas .offcanvas-body {
+  margin-top: 2rem;
+  font-size: x-large;
+}
+
 /* Scroll up button */
 
 #btn-scroll-up {
