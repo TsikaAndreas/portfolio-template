@@ -6,6 +6,10 @@ This repository contains a portfolio template designed for showcasing your work,
 
 - **View Live Example:** [portfoliotemplate.tsika.eu](https://portfoliotemplate.tsika.eu/)
 
+## 🎨 Preview
+
+![ Preview Image ](assets/readme/site-preview.png)
+
 ## 🛠️ Built With
 
 - **HTML5** - Structuring content.
